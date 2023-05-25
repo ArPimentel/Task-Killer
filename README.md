@@ -1,3 +1,11 @@
+# Setting up and configuring the work environment.
+[] PostgreSQL 
+[] PgAdmin4 
+[] Postman 
+[] JDK 17 
+[] IntelliJ IDEA
+[] pluigins IntelliJ IDEA (maven, springboot)
+
 # TaskKiller
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
@@ -29,3 +37,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## About
 
 Task Killer is a killer todo app to help you get your daily, weekly, monthly or even yearly tasks done.
+
+
