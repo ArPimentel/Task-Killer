@@ -1,10 +1,10 @@
 # Setting up and configuring the work environment.
-[] PostgreSQL 
-[] PgAdmin4 
-[] Postman 
-[] JDK 17 
-[] IntelliJ IDEA
-[] pluigins IntelliJ IDEA (maven, springboot)
+- [] PostgreSQL 
+- [] PgAdmin4 
+- [] Postman 
+- [] JDK 17 
+- [] IntelliJ IDEA
+- [] pluigins IntelliJ IDEA (maven, springboot)
 
 # TaskKiller
 
