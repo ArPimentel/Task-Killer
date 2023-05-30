@@ -9,7 +9,7 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
     TodoListComponent
   ],
   imports: [
