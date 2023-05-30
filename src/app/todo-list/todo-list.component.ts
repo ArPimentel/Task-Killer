@@ -1,34 +1,37 @@
 import { Component } from '@angular/core';
 
+interface Task {
+  id: number;
+  title: string;
+  editing: boolean;
+}
+
 @Component({
   selector: 'app-todo-list',
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent {
-  tasks: string[] = [];
+  tasks: Task[] = [];
   newTask: string = '';
-  editedTask: string = '';
 
   addTask(){
     if(this.newTask.trim() !== ''){
-      this.tasks.push(this.newTask);
+      const task: Task = {
+        id: this.tasks.length + 1,
+        title: this.newTask.trim(),
+        editing: false
+      };
+      this.tasks.push(task);
       this.newTask = '';
     }
   }
 
-  editTask(task: string) {
-    const current = this.tasks.indexOf(task)
-    if(current !== -1 ){
-      if(this.editedTask && this.editedTask.trim() !== ''){
-        this.tasks[current] = this.editedTask.trim()
-      }
-    } else {
-      console.log("Task not found")
-    }
+  editTask(task: Task) {
+    task.editing = !task.editing
   }
 
-  deleteTask(task: string) {
+  deleteTask(task: Task) {
     const index = this.tasks.indexOf(task);
     if(index !== -1){
       this.tasks.splice(index, 1)
