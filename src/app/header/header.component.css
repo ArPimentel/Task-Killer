@@ -16,12 +16,12 @@
     margin: 0 16px;
   }
 
-  .toolbar #twitter-logo {
+  .toolbar #list-logo {
     height: 40px;
-    margin: 0 8px;
+    margin: 0 10px;
   }
 
-  .toolbar #youtube-logo {
+  .toolbar #todos-logo {
     height: 40px;
     margin: 0 16px;
   }
@@ -31,5 +31,8 @@
     opacity: 0.8;
   }
   .spacer {
-    flex: 1;
+    flex: 5;
+    padding: 20px;
+    font-size: larger;
   }
+  
