@@ -16,6 +16,10 @@ export class TodoListComponent {
     }
   }
 
+  editTask() {
+    const current = this.tasks.indexOf(task)
+  }
+
   deleteTask(task: string) {
     const index = this.tasks.indexOf(task);
     if(index !== -1){
