@@ -16,4 +16,11 @@ export class TodoListComponent {
     }
   }
 
+  deleteTask(task: string) {
+    const index = this.tasks.indexOf(task);
+    if(index !== -1){
+      this.tasks.splice(index, 1)
+    }
+  }
+
 }
