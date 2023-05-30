@@ -1,3 +1,10 @@
-<p>todo-list works!</p>
+<h1>Task Killer</h1>
 
-<h1>Here's a wee change to verify</h1>
+<input type="text" placeholder="Add something" [(ngModel)]="newTask" />
+<button (click)="addTask()">Add</button>
+
+<ul>
+  <li *ngFor="let task of tasks">
+    {{ task }}
+  </li>
+</ul>
