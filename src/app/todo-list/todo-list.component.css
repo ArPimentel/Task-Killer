@@ -1,3 +1,54 @@
 .todo-content {
     margin: 20px;
 }
+
+.todo-content {
+    margin-bottom: 70px;
+}
+
+.app-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+
+button {
+    margin-top: 5px;
+}
+
+.modif-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+.add-button {
+    background-color: rgb(0, 190, 0);
+    margin-left: 5px;
+}
+
+.edit-button{
+    background-color: rgb(154, 233, 154);
+}
+.delete-button {
+    background-color: red;
+}
+
+.main-texts {
+    position: relative;
+    bottom: 4px;
+}
+
+.editer {
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
