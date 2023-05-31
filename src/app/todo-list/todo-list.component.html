@@ -5,7 +5,9 @@
 
 <ul>
   <li *ngFor="let task of tasks">
-    {{ task }}
-    <button (click)="deleteTask(task)">Delete</button>
+    <span *ngIf="!task.editing"> {{ task.title }} </span>
+    <input *ngIf="task.editing" type="text" [(ngModel)]="task.title" />
+    <button (click)="editTask(task)">{{task.editing ? "Done" : "Edit"}}</button>
+    <button [style.display]="task.editing ? 'none' : 'inline' " (click)="deleteTask(task)">Delete</button>
   </li>
 </ul>
