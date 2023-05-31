@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 interface Task {
   id: number;
@@ -11,9 +11,20 @@ interface Task {
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.css']
 })
-export class TodoListComponent {
+export class TodoListComponent implements OnInit {
   tasks: Task[] = [];
   newTask: string = '';
+
+  ngOnInit(): void {
+      const storedTasks = localStorage.getItem('tasks');
+      if (storedTasks) {
+        this.tasks = JSON.parse(storedTasks)
+      }
+  }
+
+  saveTasks(): void{
+    localStorage.setItem('tasks', JSON.stringify(this.tasks));
+  }
 
   addTask(){
     if(this.newTask.trim() !== ''){
@@ -24,17 +35,20 @@ export class TodoListComponent {
       };
       this.tasks.push(task);
       this.newTask = '';
+      this.saveTasks();
     }
   }
 
   editTask(task: Task) {
     task.editing = !task.editing
+    this.saveTasks();
   }
 
   deleteTask(task: Task) {
     const index = this.tasks.indexOf(task);
     if(index !== -1){
       this.tasks.splice(index, 1)
+      this.saveTasks();
     }
   }
 
