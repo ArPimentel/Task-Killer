@@ -4,32 +4,40 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 50px;
     display: flex;
     align-items: center;
     background-color: #1976d2;
     color: white;
-    font-weight: 600;
+    font-size: x-small;
   }
 
   .toolbar img {
-    margin: 0 16px;
+    margin: 0 5px;
   }
 
-  .toolbar #twitter-logo {
+  .toolbar #home-logo {
     height: 40px;
-    margin: 0 8px;
+    margin: 0 10px;
   }
 
-  .toolbar #youtube-logo {
+  .toolbar #list-logo {
     height: 40px;
-    margin: 0 16px;
+    margin: 0 10px;
   }
 
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
+  .toolbar #todos-logo {
+    height: 40px;
+    margin: 0 10px;
+  }
+
+  .toolbar #list-logo:hover,
+  .toolbar #todos-logo:hover,
+  .toolbar #home-logo:hover {
     opacity: 0.8;
   }
   .spacer {
-    flex: 1;
+    flex: 5;
+    padding: 20px;
   }
+  
