@@ -2,14 +2,17 @@
 <h1>Task Killer</h1>
 
 <input type="text" placeholder="Add something" [(ngModel)]="newTask" />
-<button (click)="addTask()">Add</button>
+<button class="add-button" (click)="addTask()">Add</button>
 
-<ul>
-  <li *ngFor="let task of tasks">
-    <span *ngIf="!task.editing"> {{ task.title }} </span>
-    <input *ngIf="task.editing" type="text" [(ngModel)]="task.title" />
-    <button (click)="editTask(task)">{{task.editing ? "Done" : "Edit"}}</button>
-    <button [style.display]="task.editing ? 'none' : 'inline' " (click)="deleteTask(task)">Delete</button>
+<ul class="app-list">
+  <li class="item" *ngFor="let task of tasks">
+    <input class="checkbox" type="checkbox">
+    <span class="main-texts" *ngIf="!task.editing"> {{ task.title }} </span>
+    <input class="editer" *ngIf="task.editing" type="text" [(ngModel)]="task.title" /><br>
+    <div class="modif-buttons">
+    <button class="edit-button" (click)="editTask(task)">{{task.editing ? "Done" : "Edit"}}</button>
+    <button class="delete-button" [style.display]="task.editing ? 'none' : 'inline' " (click)="deleteTask(task)">Delete</button>
+  </div>
   </li>
 </ul>
 </div>
