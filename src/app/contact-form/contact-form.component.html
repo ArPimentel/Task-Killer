@@ -1,4 +1,5 @@
-<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+<h1 class="title">Contact Us</h1>
+<form class="form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <label for="firstName">First Name: </label>
     <input type="text" id="firstName" formControlName="firstName">
     <div *ngIf="contactForm.get('firstName')?.invalid && contactForm.get('firstName')?.touched">
@@ -14,7 +15,7 @@
     <label for="message">Message: </label>
     <textarea id="message" formControlName="message"></textarea>
     <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('firstName')?.touched">
-        <span class="error">First name is required.</span>
+        <span class="error">Please leave a message.</span>
     </div>
 
     <button type="submit" [disabled]="contactForm.invalid">Submit</button>

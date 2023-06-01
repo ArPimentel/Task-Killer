@@ -1,0 +1,41 @@
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 150px;
+    
+}
+
+.title {
+    margin-left: 20px;
+}
+
+label {
+    margin: 15px 0;
+    font-size: 20pt;
+}
+
+input {
+    height: 30px;
+    font-size: 15pt;
+}
+
+textarea {
+    font-size: 15pt;
+
+}
+
+button {
+    margin-top: 30px;
+    height: 30px;
+    font-size: 15pt;
+    background-color: #2b64a1;
+    color: white;
+    border-radius: 10px;
+}
+
+span {
+    color: red;
+    
+}
