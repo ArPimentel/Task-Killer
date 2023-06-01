@@ -1,5 +1,5 @@
 <header>
-  <nav></nav>
+  <nav>
   <div class="toolbar" role="banner">
     <img width="80" alt="TaskKiller Logo" src="assets/taskKiller.png" />
     <span>Welcome</span>
@@ -15,10 +15,32 @@
       routerLink="/"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
+
+<div class="toolbar" role="banner">
+  <img width="80" alt="TaskKiller Logo" src="assets/taskKiller.png" />
+  <span>Welcome</span>
+  <div class="spacer"></div>
+  Home<a aria-label="Angular on twitter" rel="noopener" href="" title="Home">
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+    <svg
+      version="1.0"
+      id="home-logo"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="30px"
+      height="30px"
+      viewBox="-6.4 -6.4 76.80 76.80"
+      enable-background="new 0 0 30 30"
+      xml:space="preserve"
+      fill="#000000"
+      stroke="#000000"
+      stroke-width="0.00064"
+
     >
       <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-      <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
       <svg
         version="1.0"
         id="home-logo"
@@ -78,11 +100,23 @@
       </svg>
     </a>
 
+
     Lists<a
       [routerLink]="['/category']"
       rel="noopener"
       href=""
       title="List"
+    <svg
+      version="1.0"
+      id="list-logo"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="25px"
+      height="25px"
+      viewBox="0 0 64 64"
+      enable-background="new 0 0 25 25"
+      xml:space="preserve"
+      fill="#000000"
     >
       <svg
         version="1.0"
@@ -157,38 +191,13 @@
         </g>
       </svg>
     </a>
-    <!--Todos<a
-    aria-label="Angular on YouTube"
-    target="_blank"
+
+  About<a
+    [routerLink]="['/about']"
     rel="noopener"
     href="https://youtube.com/angular"
-    title="Todos"
+    title="About"
   >
-    <svg
-      id="todos-logo"
-      xmlns="http://www.w3.org/2000/svg"
-      width="30"
-      height="30"
-      fill="currentColor"
-      data-name="Logo"
-      class="bi bi-card-checklist"
-      viewBox="0 0 30 30"
-    >
-      <path
-        d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"
-      />
-      <path
-        d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"
-      />
-    </svg>
-  </a>-->
-    About<a
-      aria-label="Angular on YouTube"
-      target="_blank"
-      rel="noopener"
-      href="https://youtube.com/angular"
-      title="About"
-    >
       <svg
         version="1.0"
         id="about-logo"
@@ -263,13 +272,13 @@
         </g>
       </svg>
     </a>
-    Contact<a
-      aria-label="Angular on YouTube"
-      target="_blank"
-      rel="noopener"
-      href="https://youtube.com/angular"
-      title="Contact"
-    >
+    
+  Contact<a
+    [routerLink]="['/contact']"
+    rel="noopener"
+    href="https://youtube.com/angular"
+    title="Contact"
+  >
       <svg
         version="1.0"
         id="contact-logo"
@@ -313,24 +322,7 @@
         </g>
       </svg>
     </a>
-    About<a [routerLink]="['/about']" routerLinkActive="active">
-      <svg
-        id="todos-logo"
-        xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="30"
-        fill="currentColor"
-        data-name="Logo"
-        class="bi bi-card-checklist"
-        viewBox="0 0 30 30"
-      >
-        <path
-          d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"
-        />
-        <path
-          d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"
-        />
-      </svg>
-    </a>
-  </div>
+    </div>
+    </nav>
 </header>
+
