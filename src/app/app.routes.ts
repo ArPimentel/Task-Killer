@@ -6,11 +6,8 @@ import { ContactFormComponent } from "./contact-form/contact-form.component";
 
 const ROUTES: Routes = [
     {path: 'about', component: AboutComponent},
-    {path: 'category', component: CategoryComponent},
-
-const ROUTES: Routes = [
-    {path: 'about', component: AboutComponent},
     {path: 'contact', component: ContactFormComponent},
+    {path: 'category', component: CategoryComponent},
     {path: '', component: TodoListComponent}
 
 ];
