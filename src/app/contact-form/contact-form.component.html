@@ -1,0 +1,14 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <label for="firstName">First Name: </label>
+    <input type="text" id="firstName" formControlName="firstName">
+    <div *ngIf="contactForm.get('firstName')?.invalid && contactForm.get('firstName')?.touched">
+        <span class="error">First name is required.</span>
+    </div>
+
+    <label for="email">Email: </label>
+    <input type="text" id="email" formControlName="email">
+    <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('firstName')?.touched">
+        <span class="error">Invalid email.</span>
+    </div>
+
+</form>
