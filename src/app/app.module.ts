@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { AboutComponent } from './about/about.component';
 import { ROUTES } from './app.routes';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ROUTES } from './app.routes';
     HeaderComponent,
     FooterComponent,
     TodoListComponent,
-    AboutComponent
+    AboutComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
