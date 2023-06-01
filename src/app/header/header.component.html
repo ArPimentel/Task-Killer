@@ -4,10 +4,11 @@
     <img width="80" alt="TaskKiller Logo" src="assets/taskKiller.png" />
     <span>Welcome</span>
     <div class="spacer"></div>
+    <!-- routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }" -->
     Home<a
-      routerLink="/"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
+      [routerLink]="['/']"
+      
       rel="noopener"
       href=""
       title="Home"
@@ -79,7 +80,6 @@
 
     Lists<a
       [routerLink]="['/category']"
-      routerLinkActive="active"
       rel="noopener"
       href=""
       title="List"

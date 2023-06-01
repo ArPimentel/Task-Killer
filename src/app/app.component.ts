@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -8,16 +8,21 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'taskKiller';
-  isHomePage: boolean;
+  isHomePage!: boolean;
 
-  constructor(private router: Router) {
-    this.router.events.subscribe((event) => {
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        this.isHomePage = this.router.url === '/';
+        this.isHomePage = (this.router.url === '/')
       }
-    });
+    })
   }
-}
+
+ 
+  }
+
+
 
 
