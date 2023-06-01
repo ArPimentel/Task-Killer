@@ -2,7 +2,11 @@
 
 <router-outlet></router-outlet>
 
+<ng-container *ngIf="isHomePage" >
+    <app-category></app-category>
+</ng-container>
+
+
+
+
 <app-footer></app-footer>
-
-
-
