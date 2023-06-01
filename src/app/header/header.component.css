@@ -32,11 +32,34 @@
     margin: 0 10px;
   }
 
+  .toolbar #about-logo {
+    height: 40px;
+    margin: 0 10px;
+  }
+
+  .toolbar #contact-logo {
+    height: 40px;
+    margin: 0 10px;
+  }
+
+
   .toolbar #list-logo:hover,
   .toolbar #todos-logo:hover,
-  .toolbar #home-logo:hover {
-    opacity: 0.8;
-  }
+  .toolbar #home-logo:hover,
+  .toolbar #about-logo:hover,
+  .toolbar #contact-logo:hover {
+    opacity: 0.3;
+
+      transition: color #495356 0.2s ease;
+    }
+
+   
+ 
+
+ 
+    
+
+
   .spacer {
     flex: 5;
     padding: 20px;
