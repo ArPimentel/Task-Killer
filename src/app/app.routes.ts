@@ -5,8 +5,9 @@ import { CategoryComponent } from "./category/category.component";
 
 const ROUTES: Routes = [
     {path: 'about', component: AboutComponent},
-    {path: '', component: TodoListComponent},
-    {path: 'category', component: CategoryComponent}
+    {path: 'category', component: CategoryComponent},
+    {path: '', component: TodoListComponent}
+
 ];
 
 export { ROUTES }
