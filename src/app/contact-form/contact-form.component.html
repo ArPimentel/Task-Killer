@@ -11,4 +11,15 @@
         <span class="error">Invalid email.</span>
     </div>
 
+    <label for="message">Message: </label>
+    <textarea id="message" formControlName="message"></textarea>
+    <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('firstName')?.touched">
+        <span class="error">First name is required.</span>
+    </div>
+
+    <button type="submit" [disabled]="contactForm.invalid">Submit</button>
 </form>
+
+<div *ngIf="submitted">
+    <p>Thank you for your message!</p>
+</div>

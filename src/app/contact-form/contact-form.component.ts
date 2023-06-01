@@ -22,8 +22,10 @@ export class ContactFormComponent implements OnInit {
 
   onSubmit(): void {
     if (this.contactForm.valid) {
+      console.log("Submitted")
       this.submitted = true;
       this.contactForm.reset();
+      
     }
   }
 }
