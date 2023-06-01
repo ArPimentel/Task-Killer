@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { AboutComponent } from './about/about.component';
 import { ROUTES } from './app.routes';
+import { CategoryComponent } from './category/category.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
@@ -19,6 +20,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     FooterComponent,
     TodoListComponent,
     AboutComponent,
+    CategoryComponent,
     ContactFormComponent
   ],
   imports: [
