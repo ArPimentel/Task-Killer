@@ -1,1 +1,31 @@
-<p>category works!</p>
+<div class="list-content">
+  <h1>Category</h1>
+
+  <input type="text" placeholder="Add something" [(ngModel)]="newList" />
+  <button class="add-button" (click)="addList()">Add</button>
+
+  <ul class="app-list">
+    <li class="item" *ngFor="let list of list">
+      <input class="checkbox" type="checkbox" />
+      <span class="main-texts" *ngIf="!list.editing"> {{ list.title }} </span>
+      <input
+        class="editer"
+        *ngIf="list.editing"
+        type="text"
+        [(ngModel)]="list.title"
+      /><br />
+      <div class="modif-buttons">
+        <button class="edit-button" (click)="editList(list)">
+          {{ list.editing ? "Done" : "Edit" }}
+        </button>
+        <button
+          class="delete-button"
+          [style.display]="list.editing ? 'none' : 'inline'"
+          (click)="deleteList(list)"
+        >
+          Delete
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
