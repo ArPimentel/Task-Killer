@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   isHomePage!: boolean;
@@ -13,16 +12,10 @@ export class AppComponent {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    this.router.events.subscribe(event => {
+    this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.isHomePage = (this.router.url === '/')
+        this.isHomePage = this.router.url === '/';
       }
-    })
+    });
   }
-
- 
-  }
-
-
-
-
+}

@@ -9,7 +9,7 @@
     align-items: center;
     background-color: #1976d2;
     color: white;
-    font-size: x-small;
+    font-size: medium;
     margin: 0;
   }
 
@@ -52,13 +52,6 @@
 
       transition: color #495356 0.2s ease;
     }
-
-   
- 
-
- 
-    
-
 
   .spacer {
     flex: 5;
