@@ -9,3 +9,5 @@
 3. General CSS
 
 4. Finish contact form implementation.
+
+5. Fix netlify hosting.
