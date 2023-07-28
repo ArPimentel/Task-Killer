@@ -52,3 +52,9 @@ button {
     bottom: 5px;
     left: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+    .todo-content {
+      margin-right: 70px;
+    }
+}

@@ -1,8 +1,8 @@
 <div class="toolbar" role="banner">
   <img width="80" alt="TaskKiller Logo" src="assets/taskKiller.png" />
-  <span>Welcome</span>
+  <span class="welcome-message">Welcome</span>
   <div class="spacer"></div>
-  Home<a aria-label="Angular on twitter" rel="noopener" href="" title="Home">
+  <p>Home</p><a aria-label="Angular on twitter" rel="noopener" href="" title="Home">
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
     <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
@@ -65,7 +65,7 @@
     </svg>
   </a>
 
-  Categories<a [routerLink]="['/category']" rel="noopener" href="" title="List">
+  <p>Categories</p><a class="scroll-logo" [routerLink]="['/category']" rel="noopener" href="" title="List">
     <svg
       version="1.0"
       id="list-logo"
@@ -140,7 +140,7 @@
     </svg>
   </a>
   
-  About<a
+  <p>About</p><a
     [routerLink]="['/about']"
     rel="noopener"
     href="https://youtube.com/angular"
@@ -220,7 +220,7 @@
       </g>
     </svg>
   </a>
-  Contact<a
+  <p>Contact</p><a
     [routerLink]="['/contact']"
     rel="noopener"
     href="https://youtube.com/angular"
