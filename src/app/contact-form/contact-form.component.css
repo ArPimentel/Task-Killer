@@ -37,5 +37,15 @@ button {
 
 span {
     color: red;
-    
+}
+
+.submit {
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form {
+        margin: 50px 50px;
+        margin-right: 70px;
+    }
 }
